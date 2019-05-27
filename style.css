@@ -1,0 +1,158 @@
+body{
+    margin: 0 auto;
+    max-width: 1000px;
+    font-family: 'Acme', sans-serif;
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header{
+    text-align: center;
+    font-size: 150%;
+}
+
+#score-container{
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    padding-left: 80px;
+}
+
+.score-div{
+    text-align: center;
+    width: 23%;
+    float: left;
+    height: 200px;
+    font-size: 20px;
+}
+
+#player-option, #comp-option{
+    margin: 0 5px 0 5px;
+    position: relative;
+    top: 25px;
+    height: 150px;
+}
+#score-player,#score-computer{
+    padding-top: 20px;
+    font-size: 450%;
+}
+
+#score-player{
+    margin-right: 5px;
+}
+
+#score-computer{
+    margin-left: 5px;
+}
+
+#option-container{
+    max-width: 100%;
+    margin-top: 50px;
+    padding: 20px;
+    height: 200px;
+}
+
+.option-div{
+    width: 31.30%;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    text-align: center;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.option-div#rock, .option-div#paper{
+    
+}
+
+.option-div:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+img{
+    width: 80%;
+    height: 80%;
+    position: relative;
+    top: 20px;
+    border: 5px solid #0F2141;
+    border-radius: 5px;
+}
+
+#result{
+    text-align: center;
+}
+
+#result-container{
+    margin-top: 50px;
+    display: none;
+}
+
+#result-button{
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    background-color: black;
+    color: navajowhite;
+    display: inline-block;
+    font-size: 150%;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+#result-button:hover, #result-button:active{
+    transform: scale(1.2);
+}
+
+#result-display{
+    display: inline-block;
+    padding: 40px;
+    margin-top: 30px;
+    font-size: 200%;
+}
+footer{
+    text-align: center;
+}
+@media screen and (max-width:600px){
+    header{
+        font-size: 100%;
+    }
+    #score-container {
+        height: 150px;
+        padding-left: 30px;
+    }
+    .score-div{
+        width: 24%;
+        height: 150px;
+    }
+    #player-option, #comp-option{
+        height: 100px;
+    }
+    img{
+        position: relative;
+        top: 0px;
+    }
+    #option-container{
+        height: 150px;
+    }
+    .option-div{
+        width: 30%;
+        height: 150px;
+    }
+    #result-container{
+        margin-top: 30px;
+    }
+    #result-display{
+        margin-top: 10px;
+        padding: 20px;
+    }
+}
+
